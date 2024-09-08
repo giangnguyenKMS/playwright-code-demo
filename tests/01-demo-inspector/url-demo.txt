@@ -1,0 +1,9 @@
+url_1: https://demo.playwright.dev/todomvc/#/
+
+url_2: https://www.saucedemo.com/
+    userName: standard_user
+    userPassword: secret_sauce
+
+url_3: https://rahulshettyacademy.com/client
+    userName: demo.playwright@gmail.com
+    userPassword: Admin123
