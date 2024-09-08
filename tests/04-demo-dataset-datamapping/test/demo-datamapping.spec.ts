@@ -6,15 +6,15 @@ const dataset = JSON.parse(JSON.stringify(require("../data/placeOrderTestDataMap
 test.describe('@demo_data_mapping @smoke @regression', () => {
   for (const data of dataset) {
     test(`User login and order product ${data.fieldName}`, async ({
-      loginPage, 
       dashBoardPage, 
       cartPage
     }) => {
       test.slow();
       let productName = <string>productNameMapping.get(data.fieldName);
-      await loginPage.goToLoginPage(data.loginPageUrl);
+      await dashBoardPage.goToDashBoardPage(data.dashBoardPageUrl);
       await dashBoardPage.searchProductAddCart(productName);
       await dashBoardPage.navigateToCart();
+
       await cartPage.VerifyProductIsDisplayed(productName);
       await cartPage.Checkout();
       await cartPage.selectCountry(data.countryName);

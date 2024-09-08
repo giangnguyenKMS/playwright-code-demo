@@ -5,7 +5,7 @@
   "productName" : "ZARA COAT 3",
   "countryCode" : "india",
   "countryName" : "India",
-  "loginPageUrl": "https://rahulshettyacademy.com/client",
+  "dashBoardPageUrl": "https://rahulshettyacademy.com/client",
   "orderMessage": " Thankyou for the order. "
   },
   {
@@ -14,7 +14,7 @@
   "productName" : "IPHONE 13 PRO",
   "countryCode" : "india",
   "countryName" : "India",
-  "loginPageUrl": "https://rahulshettyacademy.com/client",
+  "dashBoardPageUrl": "https://rahulshettyacademy.com/client",
   "orderMessage": " Thankyou for the order. "
   }
 ]

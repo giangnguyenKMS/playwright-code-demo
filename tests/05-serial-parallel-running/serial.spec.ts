@@ -21,7 +21,7 @@ test.describe('@demo_serial ', () => {
   });
   
   test('runs second', async () => {
-    await page.getByText('Get Started').click();
+    await page.goto('https://google.com');
     await page.waitForTimeout(5000);
   });
 })

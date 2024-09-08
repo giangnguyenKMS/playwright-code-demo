@@ -5,7 +5,7 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : 1,
+  workers: process.env.CI ? 1 : 5,
   reporter: 'html',
   use: {
     trace: 'on',
@@ -17,41 +17,31 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    // {
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
-    // },
-
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
-
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
-
-
-    // Dependencies setup/teardown --------------------------------------------------
-    {
-      name: "setup",
-      // testDir: "./tests/02-demo-setup-teardown",
-      testDir: "./tests/03-demo-pom-fixture",
-      testMatch: "dependencies-setup.ts",
-      teardown: "teardown",
-    },
-    {
-      name: "teardown",
-      // testDir: "./tests/02-demo-setup-teardown",
-      testDir: "./tests/03-demo-pom-fixture",
-      testMatch: "dependencies-teardown.ts",
-    },
     {
       name: 'chromium',
-      dependencies: ["setup"],
-      use: { ...devices['Desktop Chrome'], storageState: "./auth.json" },
+      use: { ...devices['Desktop Chrome'] },
     },
+
+    // Dependencies setup/teardown --------------------------------------------------
+    // {
+    //   name: "setup",
+    //   testDir: "./tests/02-demo-setup-teardown",
+    //   // testDir: "./tests/03-demo-pom-fixture",
+    //   testMatch: "dependencies-setup.ts",
+    //   teardown: "teardown",
+    // },
+    // {
+    //   name: "teardown",
+    //   testDir: "./tests/02-demo-setup-teardown",
+    //   // testDir: "./tests/03-demo-pom-fixture",
+    //   testMatch: "dependencies-teardown.ts",
+    //   use: { storageState: "./auth.json" },
+    // },
+    // {
+    //   name: 'chromium',
+    //   dependencies: ["setup"],
+    //   use: { ...devices['Desktop Chrome'], storageState: "./auth.json" },
+    // },
     // ------------------------------------------------------------------------
   ],
 });
