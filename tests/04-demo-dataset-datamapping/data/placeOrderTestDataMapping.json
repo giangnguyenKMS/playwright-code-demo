@@ -1,0 +1,21 @@
+[
+  {
+  "fieldName" : "productName1",
+  "username" : "demo.playwright@gmail.com",
+  "password" : "Admin123",
+  "countryCode" : "india",
+  "countryName" : "India",
+  "loginPageUrl": "https://rahulshettyacademy.com/client",
+  "orderMessage": " Thankyou for the order. "
+  },
+  {
+  "fieldName" : "productName3",
+  "username" : "demo.playwright@gmail.com",
+  "password" : "Admin123",
+  "countryCode" : "india",
+  "countryName" : "India",
+  "loginPageUrl": "https://rahulshettyacademy.com/client",
+  "orderMessage": " Thankyou for the order. "
+  }
+]
+  
