@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sun Sep 08 18:12:14 GMT 2024","Sun Sep 08 18:12:44 GMT 2024","30501","chromium","03-demo-pom-fixture/test/demo-fixture.spec.ts","@demo_fixture @smoke @regression","","","Test case: Demo fixture",""
