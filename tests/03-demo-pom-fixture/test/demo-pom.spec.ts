@@ -24,5 +24,3 @@ test.describe('@demo_pom @smoke @regression', () => {
     await cartPage.verifyOrderSuccessfully(orderSuccessfullyMessage);
   })
 });
-
-
